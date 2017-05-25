@@ -1,14 +1,14 @@
 version: '3'
 
 services:
-  geoip:
+  geoip.tech:
     build: https://github.com/zulhilmizainuddin/geoip-webservice.git
-    container_name: geoip
+    container_name: geoip.tech
     ports:
       - 4000:4000
-  georoute:
+  georoute.tech:
     build: https://github.com/zulhilmizainuddin/georoute.git
-    container_name: georoute
+    container_name: georoute.tech
     ports:
       - 3000:3000
   proxy:
