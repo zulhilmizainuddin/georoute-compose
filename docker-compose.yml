@@ -6,13 +6,16 @@ services:
     container_name: geoip
     ports:
       - 4000:4000
+    restart: always
   georoute:
     build: https://github.com/zulhilmizainuddin/georoute.git
     container_name: georoute
     ports:
       - 3000:3000
+    restart: always
   proxy:
     build: https://github.com/zulhilmizainuddin/georoute-proxy.git
     container_name: proxy
     ports:
       - 80:80
+    restart: always
